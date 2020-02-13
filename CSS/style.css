@@ -7,9 +7,6 @@ img{
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-p{
-    font-size: 16px;
-}
 .site_header{
     padding: 1.50em 0;
 }
@@ -28,4 +25,53 @@ p{
 .main_content{
     padding: 0;
     margin-top: 2.5em;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*Media*/
+@media (min-width: 768px){
+    .main_content{
+        width: 80%;
+        float: left;
+        padding: 0 3.75 0 0;
+    }
+    .sidebar {
+        width: 30%;
+        float: right;
+        padding: 0;
+        margin-top: 2.5em;
+    }
+}
+.main_bar a:hover{
+    background-color: rgb(202, 42, 29);
+}
+.main_bar a{
+    color: #ffffff;
+    font-size: 1.375em;
+    text-decoration: none;
+    padding: 1.25em;
+    text-align: center;
+    display: block;
+    transition: background-color 0.5s ease-in-out;
+}
+@media (min-width: 768px){
+    .main_bar a{
+        display: inline;
+    }
+}
+h2 {
+    color: rgb(202, 42, 29);
+    margin-bottom: 1.25em;
+}
+.entry {
+    margin-bottom: 3.75em;
+}
+.entry:last-of-type {
+    margin-bottom: 0;
+}
+.entry img {
+    display: block;
 }
